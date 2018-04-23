@@ -4,27 +4,33 @@
     <meta charset='UTF-8'/>
     <title>Build a Random Quote Machine</title>
     <link rel='stylesheet' href='style.css'/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   </head>
   <body>
     <div class='container'>
       <div class='quote-container'>
           <div class="quote-text">
-            <i class="fa fa-quote-left"> </i><span id="text"></span>
+            <p id="quotation"></p>
+            <p id="author"></p>
           </div>
           <div class="quote-author">
-            - <span id="author"></span>
+            <span id="author"></span>
           </div>
-          <div class="buttons">
+          <button>
             <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-             <a class="button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank">
-              <i class="fa fa-tumblr"></i>
+              <i class="fab fa-twitter"></i>
             </a>
             <button class="button" id="new-quote">New quote</button>
-          </div>
+          </button>
         <div class="footer"> by <a href="http://codepen.io/hezag/">hezag</a></div>
       </div>
     </div>
+
+    <!-- Scripts -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="random_quote_machine.js"></script>
   </body>
 </html>
