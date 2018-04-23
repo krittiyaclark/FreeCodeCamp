@@ -11,6 +11,10 @@ $(document).ready(function() {
 				$('#author').html(('-- ' + json.quoteAuthor + ' --'));
 				$('#tweet-quote').attr('href', 'https://twitter.com/home/?status=' + json.quoteText + '-- ' + json.quoteAuthor + ' --');
 	     		},
+	     	error:function(error){
+	     		$('#quotation').text('ERROR!');
+	     		$('#author').text('ERROR!');
+	     	}
 	  });
 	}
 
